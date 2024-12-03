@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "2628c885-f0c4-4ba6-afbc-4f9cc855fe9e",
+		"name": "Resume API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39813537"
+	},
+	"item": [
+		{
+			"name": "list resume",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload resume",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kamal",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "k@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2005-02-25",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Bihar",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "tal",
+							"type": "text"
+						},
+						{
+							"key": "pImage",
+							"type": "file",
+							"src": "/C:/Users/Asus/Downloads/miles-burke-idhx-MOCDSk-unsplash.jpg"
+						},
+						{
+							"key": "rdoc",
+							"type": "file",
+							"src": "/C:/Users/Asus/Downloads/RenderCV_Classic_Theme.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resume/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resume",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
